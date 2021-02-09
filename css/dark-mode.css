@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #4d4d4d;
+    --progress-color: lightgrey;
+}
+
+[data-theme="dark"] {
+    --primary-color: #e6e6e6;
+    --bg-color: #161625;
+    --heading-color: #bfbfbf;
+    --progress-color: #383838;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+h1 {
+	text-align: center;
+	color: var(--heading-color);
+}
+
+p, a {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.progress {
+  background-color: var(--progress-color);
+  height: 300px;
+}
+
+.progress > svg {
+  display: block;
+  height: 100%;
+}
+
+#percent {
+  font-family: 'Courier New', Courier, monospace;
+}
