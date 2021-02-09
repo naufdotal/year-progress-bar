@@ -5,36 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Year progress bar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        color: #444;
-        background-color: #282828;
-      }
-      h1, p {
-        text-align: center;
-      }
-      .progress {
-        background-color: #282828;
-        height: 300px;
-      }
-      .progress > svg {
-        display: block;
-        height: 100%;
-      }
-      #percent {
-        font-family: 'Courier New', Courier, monospace;
-      }
-    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
   </head>
   <body>
-    <h1>Year progress bar</h1>
 
+ <div class="container d-flex p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <nav class="nav justify-content-center float-right">
+        <a class="nav-link active" href="https://coliff.github.io/dark-mode-switch/">Home</a>
+        <a class="nav-link" href="https://github.com/coliff/dark-mode-switch" target="_blank">GitHub</a>
+        <div class="nav-link">
+
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="js/dark-mode-switch.min.js"></script>
+
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <h1>🌓 Year Progress Bar</h1>
+      <p class="lead">Nowadays everything needs a progress bar</p>
     <div class="progress" id="progress"></div>
-
     <h1 id="percent"></h1>
+      <p>
+        <a href="https://github.com/naufdotal/year-progress-bar" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">
+          Learn more
+        </a>
+      </p>
+    </main>
 
-    <script src="progressbar.min.js"></script>
+    <footer class="mt-auto">
+      <p>@ 2021</p>
+    </footer>
 
-    <script src="main.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="js/main.js"></script>
+  </div>
   </body>
 </html>
